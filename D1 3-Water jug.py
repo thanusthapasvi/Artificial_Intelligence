@@ -17,10 +17,10 @@ def Water_Jug_problem(X, Y):
                 Y - min(Y, (J1-X))) or
                 Water_Jug_problem(X - min(X, (J2-Y)), 
                 Y + min(X, (J2-Y)))) 
-    else: 
+    else:
         return False
-J1 = int(input("Enter a value : "))
-J2 = int(input("Enter other value : "))
-L = int(input("Enter another value : "))
+J1 = int(input("Enter jug 1 volume : "))
+J2 = int(input("Enter jug 2 volume : "))
+L = int(input("Enter volume to measure : "))
 print("Path is as Follow:")  
 Water_Jug_problem(0,0)
